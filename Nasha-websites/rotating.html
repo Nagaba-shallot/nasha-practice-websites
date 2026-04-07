@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .rotating-div{
+            width: 700px;
+            height: 700px;
+            align-items: flex-start;
+            justify-content: center;
+            display: flex;
+            border-radius: 10px;
+            color: purple;
+            background-color: blue;
+            
+            
+        }
+        @keyframes rotate {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        img,h2{
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            animation: rotate 20s linear infinite;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotating image</title>
+</head>
+<body>
+    <div class="rotating-div">
+        <h2>rotation</h2>
+        <img src="images/nasha resin crafts logo.png" alt="rotating logo" class="rotating-image">
+    </div>
+</body>
+</html>
